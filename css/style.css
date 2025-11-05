@@ -1,0 +1,136 @@
+:root {
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link.active {
+  color: #07f468 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #07f468;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar.fixed-top {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  z-index: 1030;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #07f468 !important;
+}
+
+.display-2 {
+  padding: 2rem 1rem;
+}
+
+.jumbotron {
+  padding: 10rem 1rem;
+  background-color: #050f09;
+}
+
+.highlight {
+  color: #07f468;
+}
+
+.btn-neon-filled {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background-color: #07f468;
+  color: #000;
+  transition: all 0.25s ease;
+}
+
+.btn-neon-filled:hover {
+  box-shadow: 0 0 20px 5px rgba(0, 255, 132, 0.6);
+  background-color: #00e673;
+  border-color: #00e673;
+  transform: translateY(-2px);
+  color: #000;
+}
+
+.btn-neon-outline {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #999999;
+  transition: all 0.25s ease;
+}
+
+.btn-neon-outline:hover {
+  background-color: rgba(0, 255, 132, 0.1);
+  color: #07f468;
+  border: 2px solid #07f468;
+  transform: translateY(-2px);
+}
+
+.section1 {
+  padding: 10rem 1rem;
+  background-color: #050f09;
+}
+
+.section2 {
+  padding: 10rem 1rem;
+  background-color: #0a2314;
+}
+
+.sectionabout {
+  padding: 15rem 1rem;
+  background-color: #0a2314;
+}
+
+.textabout {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #0f1e12;
+  border: 1px solid #13391d;
+  border-radius: 10px;
+}
+
+.badge {
+  border: 1px solid currentColor;
+  border-color: #07f468;
+  color: #07f468;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  background-color: #07f468;
+  color: #0a2314;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00ff7f88;
+}
+
+.btn-outline-success {
+  border-color: #00ff7f;
+  color: #00ff7f;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #00ff7f;
+  color: #0a0f0a;
+  box-shadow: 0 0 15px #00ff7f88;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 80px;
+  min-height: 80px;
+}
