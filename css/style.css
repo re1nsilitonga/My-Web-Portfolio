@@ -144,3 +144,23 @@ body {
   transform: scale(1.15);
   filter: drop-shadow(0 0 6px #07f468);
 }
+
+.github {
+  transition: transform 0.25s ease, filter 0.25s ease;
+  cursor: pointer;
+}
+
+.github:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px #07f468);
+}
+
+.ig {
+  transition: transform 0.25s ease, filter 0.25s ease;
+  cursor: pointer;
+}
+
+.ig:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px #07f468);
+}
