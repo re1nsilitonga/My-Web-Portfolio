@@ -134,3 +134,13 @@ body {
   max-height: 80px;
   min-height: 80px;
 }
+
+.bi {
+  transition: transform 0.25s ease, filter 0.25s ease;
+  cursor: pointer;
+}
+
+.bi:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px #07f468);
+}
