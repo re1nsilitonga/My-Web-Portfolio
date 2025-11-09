@@ -96,9 +96,44 @@ body {
 }
 
 .card {
+  position: relative;
   background-color: #0f1e12;
+  border-radius: 15px;
+  overflow: hidden;
   border: 1px solid #13391d;
-  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00ff99, transparent);
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+/* === SAAT HOVER === */
+.card:hover::before {
+  opacity: 1;
+  animation: moveLine 1.5s linear infinite;
+}
+
+@keyframes moveLine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 0 25px #00ff9960;
+  transform: translateY(-5px);
 }
 
 .badge {
@@ -163,4 +198,36 @@ body {
 .ig:hover {
   transform: scale(1.15);
   filter: drop-shadow(0 0 6px #07f468);
+}
+
+a:focus,
+a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Tooltip */
+.copy-tooltip {
+  position: fixed;
+  transform: translateX(-50%) translateY(-10px);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+
+.copy-tooltip.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-25px);
 }
